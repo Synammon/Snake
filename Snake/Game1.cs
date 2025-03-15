@@ -11,7 +11,6 @@ namespace Snake
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private Snake _snake;
-        private Board _board;
         private static int _highScore;
 
         public const int WIDTH = 840;
@@ -74,7 +73,7 @@ namespace Snake
 
             _snake = new Snake();
             _snake.Reset();
-            _board = new Board();
+            Board _board = new Board();
 
             Board.Reset();
 
